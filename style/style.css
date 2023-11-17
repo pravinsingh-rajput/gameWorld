@@ -1,0 +1,1608 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+[aria-label="Container"] {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  overflow: hidden;
+}
+
+/* Header */
+
+header {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 700px;
+  background: url(../Assets/Photos/futuristic-bg.png) no-repeat;
+  padding: 10px 5%;
+  color: #fff;
+  position: relative;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin-bottom: 2%;
+  cursor: pointer;
+}
+
+nav img {
+  width: 80px;
+  margin-right: 5%;
+  transition: all 0.2s ease-in-out;
+}
+nav img:hover {
+  scale: 1.05;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  align-items: center;
+}
+
+li {
+  list-style: none;
+  margin: 5px 3%;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  border: 2px solid transparent;
+  font-size: 18px;
+}
+li:hover {
+  border-bottom: 2px solid #fff;
+  color: #f87e65;
+  scale: 1.1;
+}
+
+.nav-button {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+button {
+  background-color: #f87e65;
+  color: #fff;
+  padding: 8px 20px;
+  margin: 0px 5px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  border: 1px solid #f87e65;
+}
+
+button:hover {
+  background: transparent;
+  border: 1px solid #fff;
+  box-shadow: 1px 1px 3px #fff;
+  scale: 1.05;
+}
+
+.sign-in {
+  background: transparent;
+  border: none;
+}
+
+.main-content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.left-header {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  height: 100%;
+  justify-content: center;
+  padding-right: 8%;
+}
+
+.left-header h1 {
+  font-size: 53px;
+  margin-bottom: 25px;
+}
+
+.left-header p {
+  font-size: 13px;
+  margin-right: 60px;
+  margin-bottom: 30px;
+  opacity: 0.7;
+}
+
+.learn-more {
+  background-color: transparent;
+  border: 1px solid #fff;
+  box-shadow: -1px 1px 3px #fff;
+  margin-left: 10px;
+}
+
+.home-button {
+  margin: 5px 0px;
+  display: flex;
+  flex-direction: row;
+}
+
+.right-header {
+  width: 50%;
+}
+
+/*  */
+.right-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.right-header-upper-container {
+  height: 50%;
+  display: flex;
+}
+.right-header-lower-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+}
+
+.dash {
+  margin-right: 20px;
+}
+
+.right-header-lower-container h3 {
+  width: 40%;
+  font-size: 30px;
+}
+
+.arrow {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+/* Polular Page */
+
+[aria-label="Popular"] {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 4% 5%;
+}
+
+.popular-upper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.popular-upper h2 {
+  width: 50%;
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.popular-game {
+  display: inline-grid;
+  grid-template-columns: repeat(auto-fit, 250px);
+  /* grid-template-rows: repeat(auto, 1fr); */
+  grid-gap: 55px;
+  justify-content: center;
+  width: 100%;
+  align-tracks: center;
+}
+
+.popular-card {
+  height: 300px;
+  width: 250px;
+  position: relative;
+  cursor: pointer;
+  transition: 0.2s all ease-in-out;
+}
+
+.popular-card:hover {
+  scale: 1.05;
+  box-shadow: 4px 4px 4px #646464;
+}
+
+.popular-card img {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.details {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  background-image: filter();
+  backdrop-filter: blur(10px);
+  color: #fff;
+  width: 100%;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  padding: 5px 0px;
+}
+
+.left-details {
+  z-index: 2;
+  width: 50%;
+  margin-left: 10px;
+  position: relative;
+}
+.right-details {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40%;
+  margin-right: 10px;
+}
+.left-details p {
+  font-size: 13px;
+}
+
+.ratings img {
+  width: 15px;
+}
+
+.popular-lower {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+}
+
+.popular-lower img {
+  width: 420px;
+  height: 320px;
+  margin-right: 80px;
+  transition: all 0.2s ease-in-out;
+}
+
+.popular-lower img:hover {
+  scale: 1.02;
+  box-shadow: 5px 5px 8px #646464;
+}
+
+.description-popular {
+  display: flex;
+  flex-direction: column;
+  padding-right: 110px;
+  justify-content: center;
+}
+.description-popular h1 {
+  font-size: 55px;
+  margin-bottom: 10px;
+}
+.description-popular p {
+  font-size: 14px;
+  margin-bottom: 20px;
+  color: #646464;
+}
+
+.explore-now-pop {
+  transition: all 0.2s ease-in-out;
+}
+
+.explore-now-pop:hover {
+  background-color: #fff;
+  color: #f87e65;
+  border: 1px solid #f87e65;
+  box-shadow: 1px 1px 3px #f87e65;
+}
+
+.learn-more-pop {
+  border: 1px solid #f87e65;
+  color: #f87e65;
+  background-color: #fff;
+  transition: all 0.2s ease-in-out;
+}
+.learn-more-pop:hover {
+  border: 1px solid #f87e65;
+  color: #f87e65;
+  box-shadow: 1px 1px 3px #f87e65;
+}
+
+/* Recommended Page */
+
+[aria-label="Recommend"] {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 4% 5%;
+  color: black;
+}
+
+.heading {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 45px;
+  margin-top: 10px;
+  justify-content: space-between;
+}
+
+.heading h2 {
+  width: 340px;
+  font-size: 30px;
+}
+
+.next-prev-button {
+  display: flex;
+  flex-direction: row;
+  width: 350px;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.next-button,
+.previous-button {
+  width: 35px;
+  background-color: #f87e65;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px 5px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.previous-button:hover {
+  scale: 0.95;
+  box-shadow: -2px -2px 3px #868686;
+}
+.next-button:hover {
+  scale: 0.95;
+  box-shadow: 2px 2px 3px #868686;
+}
+
+.previous-button {
+  background-color: #f8a595;
+}
+
+.recommend-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 550px);
+  grid-gap: 30px;
+}
+
+.recommend-card {
+  display: flex;
+  flex-direction: row;
+  width: 550px;
+  height: 230px;
+}
+.recommend-card img {
+  width: 37%;
+  height: 100%;
+  margin-right: 30px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.recommend-card img:hover {
+  scale: 1.02;
+  box-shadow: 3px 3px 4px #686868;
+}
+
+.recommend-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-right: 10px;
+}
+
+.name {
+  margin-bottom: 10px;
+}
+
+.type {
+  font-size: 14px;
+  color: #f87e65;
+  margin-bottom: 10px;
+}
+
+.description {
+  color: #646464;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.Download {
+  margin-left: 0px;
+  margin: 5px 0px;
+  transition: all 0.3s ease-in-out;
+}
+
+.Download:hover {
+  color: #f87e65;
+  border: 1px solid #f87e65;
+  box-shadow: 2px 2px 4px #f87e65;
+}
+
+/* Most played page */
+
+[aria-label="Most-played"] {
+  background-color: #000;
+  color: #fff;
+  padding: 4% 6%;
+}
+
+.mostplayed-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mostplayed-container h1 {
+  width: 35%;
+  text-align: center;
+  font-size: 45px;
+  margin-bottom: 30px;
+}
+
+.mostplayed-upper {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.mostplayed-left {
+  width: 28%;
+  height: 500px;
+}
+.mostplayed-left img {
+  width: 100%;
+  cursor: pointer;
+}
+
+.mostplayed-right {
+  display: flex;
+  flex-direction: column;
+  width: 72%;
+  position: relative;
+  padding-top: 30px;
+  padding-left: 50px;
+}
+
+.mostplayed-right p {
+  font-size: 14px;
+  font-weight: 100;
+  padding-right: 20%;
+  margin-bottom: 60px;
+}
+
+.gameofworld {
+  position: absolute;
+  left: 0;
+  top: 80px;
+}
+
+.lowerrightplayed {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+}
+.lowerrightplayed img:first-of-type {
+  height: 400px;
+  width: 350px;
+  cursor: pointer;
+}
+
+.lowerrightplayed img:last-of-type {
+  height: 280px;
+  width: 280px;
+  margin-left: 30px;
+  cursor: pointer;
+}
+
+.mostplayedimg {
+  transition: all 0.2s ease-in-out;
+}
+
+.mostplayedimg:hover {
+  scale: 1.05;
+  box-shadow: 2px 1.5px 3px #fff;
+}
+
+.mostplayed-lower {
+  background: url("../Assets/Photos/Rectangle 606.png") no-repeat center
+    center/cover;
+  width: 100%;
+  height: 300px;
+}
+
+.mostplayedlower-container {
+  background-color: rgba(0, 0, 0, 0.459);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.mostplayed-lower h2 {
+  width: 30%;
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+.mostplayed-lower p {
+  margin-bottom: 15px;
+  font-size: 14px;
+  font-weight: 100;
+  width: 25%;
+  text-align: center;
+}
+
+/* Footer */
+
+footer {
+  background-color: rgb(7, 8, 15);
+  color: #fff;
+  display: inline-grid;
+  justify-content: space-between;
+  grid-template-columns: repeat(auto-fit, 180px);
+  padding: 4% 5%;
+}
+
+.flogo {
+  width: 100px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.footer1 ul {
+  margin-bottom: 15px;
+}
+
+.social img {
+  margin-right: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.social img:hover {
+  scale: 1.1;
+}
+
+.content h4 {
+  margin-bottom: 20px;
+}
+
+.content ul {
+  color: rgb(175, 173, 173);
+  font-size: 14px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.content ul:hover {
+  scale: 1.1;
+  color: #fff;
+}
+.footer1 ul:hover {
+  color: #fff;
+  scale: 1.05;
+}
+
+/* //////////////////////////////////////////////////// */
+/* 
+320px — 480px: Mobile devices
+481px — 768px: iPads, Tablets
+769px — 1024px: Small screens, laptops
+1025px — 1200px: Desktops, large screens
+1201px and more —  Extra large screens, TV 
+*/
+/* //////////////////////////////////////////////////// */
+
+/* 1025px — 1200px: Desktops, large screens */
+
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+  .left-header {
+    padding-right: 2%;
+  }
+  .right-header-lower-container h3 {
+    width: 37%;
+    font-size: 25px;
+  }
+
+  .popular-upper h2 {
+    font-size: 35px;
+    margin-bottom: 45px;
+  }
+
+  .popular-game {
+    grid-template-columns: repeat(auto-fit, 200px);
+    grid-gap: 20px;
+  }
+
+  .popular-card {
+    height: 300px;
+    width: 200px;
+  }
+
+  .left-details h4 {
+    font-size: 15px;
+  }
+
+  .left-details p {
+    font-size: 12px;
+  }
+
+  .right-details button {
+    padding: 6px 10px;
+    margin-left: 10px;
+  }
+
+  .ratings img {
+    width: 13px;
+  }
+
+  .popular-lower img {
+    width: 380px;
+    height: 290px;
+    margin-right: 60px;
+    transition: all 0.2s ease-in-out;
+  }
+
+  .description-popular h1 {
+    font-size: 40px;
+    margin-bottom: 8px;
+  }
+
+  .description-popular p {
+    font-size: 12px;
+  }
+
+  /* Recommended Page */
+
+  .heading h2 {
+    width: 340px;
+    font-size: 30px;
+  }
+
+  .next-button,
+  .previous-button {
+    width: 35px;
+    height: 35px;
+    margin: 0px 5px;
+  }
+
+  .recommend-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 400px);
+    grid-gap: 30px;
+  }
+
+  .recommend-card {
+    width: 420px;
+    height: 200px;
+  }
+
+  .recommend-card img {
+    width: 35%;
+    height: 100%;
+    margin-right: 25px;
+  }
+
+  .name {
+    margin-bottom: 8px;
+    font-size: 16px;
+  }
+
+  .type {
+    font-size: 13px;
+    margin-bottom: 8px;
+  }
+
+  .description {
+    color: #646464;
+    font-size: 13px;
+    margin-bottom: 10px;
+  }
+
+  /* Most played page */
+  .mostplayed-container h1 {
+    width: 40%;
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 30px;
+  }
+
+  .mostplayed-left {
+    width: 26%;
+    height: 470px;
+  }
+
+  .mostplayed-right span img {
+    width: 700px;
+  }
+
+  .mostplayed-right p {
+    font-size: 13px;
+    padding-right: 18%;
+    margin-bottom: 50px;
+  }
+
+  .lowerrightplayed img:first-of-type {
+    height: 370px;
+    width: 300px;
+  }
+
+  .lowerrightplayed img:last-of-type {
+    height: 250px;
+    width: 250px;
+    margin-left: 25px;
+  }
+
+  .mostplayed-lower h2 {
+    width: 45%;
+    font-size: 28px;
+    margin-bottom: 14px;
+  }
+  .mostplayed-lower p {
+    margin-bottom: 14px;
+    font-size: 13px;
+    width: 30%;
+  }
+}
+
+/* 769px — 1024px: Small screens, laptops */
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  nav img {
+    width: 60px;
+    margin-right: 5%;
+  }
+
+  li {
+    margin: 4px 2%;
+    font-size: 16px;
+  }
+
+  header {
+    height: 480px;
+  }
+
+  .left-header h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+  }
+  .left-header {
+    padding-right: 1%;
+  }
+
+  .right-header-upper-container {
+    height: 50%;
+    display: flex;
+  }
+  .right-header-upper-container img {
+    width: 55px;
+  }
+
+  .dash {
+    margin-right: 15px;
+  }
+  .dash img {
+    width: 40px;
+  }
+
+  .right-header-lower-container h3 {
+    width: 60%;
+    font-size: 25px;
+  }
+
+  .arrow img {
+    width: 50px;
+  }
+
+  button {
+    padding: 5px 15px;
+    margin: 0px 4px;
+  }
+
+  .popular-upper h2 {
+    font-size: 28px;
+    margin-bottom: 40px;
+  }
+
+  .popular-game {
+    grid-template-columns: repeat(auto-fit, 230px);
+    grid-gap: 20px;
+  }
+
+  .popular-card {
+    height: 300px;
+    width: 230px;
+  }
+
+  .left-details h4 {
+    font-size: 15px;
+  }
+
+  .left-details p {
+    font-size: 12px;
+  }
+
+  .right-details button {
+    padding: 6px 10px;
+    margin-left: 10px;
+  }
+
+  .ratings img {
+    width: 13px;
+  }
+
+  .popular-lower {
+    display: flex;
+    flex-direction: row;
+    margin-top: 5px;
+    justify-content: center;
+  }
+
+  .popular-lower img {
+    width: 280px;
+    height: 200px;
+    margin-right: 15px;
+    transition: all 0.2s ease-in-out;
+  }
+
+  .description-popular {
+    padding-right: 0px;
+  }
+
+  .description-popular h1 {
+    font-size: 30px;
+    margin-bottom: 8px;
+  }
+
+  .description-popular p {
+    font-size: 12px;
+  }
+
+  /* Recommended Page */
+
+  .heading h2 {
+    width: 340px;
+    font-size: 28px;
+  }
+
+  .next-button,
+  .previous-button {
+    width: 33px;
+    height: 33px;
+    margin: 0px 5px;
+  }
+
+  .recommend-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 330px);
+    grid-gap: 30px;
+  }
+
+  .recommend-card {
+    width: 350px;
+    height: 180px;
+  }
+
+  .recommend-card img {
+    width: 40%;
+    height: 100%;
+    margin-right: 10px;
+  }
+
+  .name {
+    margin-bottom: 8px;
+    font-size: 15px;
+  }
+
+  .type {
+    font-size: 13px;
+    margin-bottom: 8px;
+  }
+
+  .description {
+    color: #646464;
+    font-size: 13px;
+    margin-bottom: 10px;
+  }
+
+  /* Most played page */
+  .mostplayed-container h1 {
+    width: 40%;
+    font-size: 30px;
+    margin-bottom: 15px;
+  }
+
+  .mostplayed-left {
+    width: 26%;
+    height: 400px;
+  }
+
+  .mostplayed-right {
+    padding-left: 20px;
+  }
+
+  .mostplayed-right span img {
+    width: 540px;
+  }
+
+  .mostplayed-right p {
+    font-size: 13px;
+    padding-right: 10%;
+    margin-bottom: 30px;
+  }
+
+  .lowerrightplayed img:first-of-type {
+    height: 280px;
+    width: 210px;
+  }
+
+  .lowerrightplayed img:last-of-type {
+    height: 200px;
+    width: 200px;
+    margin-left: 25px;
+  }
+
+  .mostplayed-lower {
+    width: 100%;
+    height: 200px;
+  }
+
+  .mostplayed-lower h2 {
+    width: 45%;
+    font-size: 25px;
+    margin-bottom: 8px;
+  }
+  .mostplayed-lower p {
+    margin-bottom: 8px;
+    font-size: 11px;
+    width: 30%;
+  }
+
+  /* Footer */
+
+  footer {
+    grid-template-columns: repeat(auto-fit, 150px);
+  }
+
+  .flogo {
+    width: 70px;
+    margin-bottom: 12px;
+  }
+
+  .content h4 {
+    margin-bottom: 15px;
+  }
+
+  .social img {
+    width: 25px;
+  }
+
+  .content ul {
+    font-size: 12px;
+    margin-bottom: 8px;
+  }
+}
+
+/*481px — 768px: iPads, Tablets  */
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  nav img {
+    width: 60px;
+    margin-right: 5%;
+  }
+
+  .nav-button {
+    display: none;
+  }
+
+  li {
+    margin: 4px 2%;
+    font-size: 15px;
+  }
+
+  .main-content {
+    flex-direction: column;
+  }
+
+  header {
+    height: 480px;
+  }
+
+  .left-header,
+  .right-header {
+    width: 100%;
+  }
+  .left-header {
+    height: 70%;
+  }
+
+  .left-header h1 {
+    font-size: 30px;
+    margin-bottom: 15px;
+  }
+  .left-header {
+    padding-right: 1%;
+  }
+  .left-header p {
+    font-size: 12px;
+    margin-bottom: 20px;
+  }
+  .right-header {
+    flex-direction: column-reverse;
+  }
+
+  .right-header-upper-container {
+    height: 50%;
+  }
+  .right-header-upper-container img {
+    width: 50px;
+  }
+
+  .dash {
+    margin-right: 0px;
+    display: flex;
+    align-items: center;
+  }
+  .dash img {
+    width: 40px;
+  }
+
+  .right-header-lower-container h3 {
+    width: fit-content;
+    font-size: 16px;
+    margin: 10px 8px;
+  }
+
+  .arrow {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .arrow img {
+    width: 50px;
+  }
+
+  button {
+    padding: 5px 15px;
+    margin: 0px 4px;
+  }
+
+  .popular-upper h2 {
+    font-size: 20px;
+    width: 80%;
+    margin-bottom: 40px;
+  }
+
+  .popular-game {
+    grid-template-columns: repeat(auto-fit, 250px);
+  }
+
+  .popular-card {
+    height: 300px;
+    width: 250px;
+  }
+
+  .left-details h4 {
+    font-size: 14px;
+  }
+
+  .left-details p {
+    font-size: 11px;
+  }
+
+  .right-details button {
+    padding: 6px 10px;
+    margin-left: 10px;
+  }
+
+  .ratings img {
+    width: 12px;
+  }
+
+  .popular-lower {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5px;
+    justify-content: center;
+  }
+
+  .popular-lower img {
+    width: 280px;
+    height: 200px;
+    margin-right: 0px;
+    margin-bottom: 15px;
+    transition: all 0.2s ease-in-out;
+  }
+
+  .description-popular {
+    padding-right: 0px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .description-popular h1 {
+    font-size: 22px;
+    text-align: center;
+    margin-bottom: 8px;
+  }
+
+  .description-popular p {
+    font-size: 10px;
+    text-align: center;
+    width: 80%;
+  }
+
+  /* Recommended Page */
+
+  .heading h2 {
+    width: 340px;
+    font-size: 22px;
+  }
+
+  .next-button,
+  .previous-button {
+    width: 28px;
+    height: 28px;
+    margin: 0px 5px;
+  }
+  .next-button img,
+  .previous-button img {
+    width: 20px;
+  }
+
+  .recommend-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 400px);
+    grid-gap: 30px;
+  }
+
+  .recommend-card {
+    width: 400px;
+    height: 180px;
+  }
+
+  .recommend-card img {
+    width: 40%;
+    height: 100%;
+    margin-right: 10px;
+  }
+
+  .name {
+    margin-bottom: 8px;
+    font-size: 15px;
+  }
+
+  .type {
+    font-size: 13px;
+    margin-bottom: 8px;
+  }
+
+  .description {
+    color: #646464;
+    font-size: 13px;
+    margin-bottom: 10px;
+  }
+
+  /* Most played page */
+
+  .mostplayed-upper {
+    flex-direction: column;
+  }
+
+  .mostplayed-container h1 {
+    width: 60%;
+    font-size: 25px;
+    margin-bottom: 15px;
+  }
+
+  .mostplayed-left {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+  }
+  .mostplayed-left img {
+    width: 70%;
+    height: 250px;
+  }
+
+  .mostplayed-right {
+    padding-left: 20px;
+    width: 100%;
+  }
+
+  .mostplayed-right span img {
+    display: none;
+  }
+
+  .mostplayed-right p {
+    font-size: 13px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+    padding-right: 0%;
+  }
+
+  .lowerrightplayed img:first-of-type {
+    height: 250px;
+    width: 200px;
+  }
+
+  .lowerrightplayed img:last-of-type {
+    height: 180px;
+    width: 180px;
+    margin-left: 25px;
+  }
+
+  .mostplayed-lower {
+    width: 100%;
+    height: 200px;
+  }
+
+  .mostplayed-lower h2 {
+    width: 100%;
+    font-size: 22px;
+    margin-bottom: 8px;
+  }
+  .mostplayed-lower p {
+    margin-bottom: 8px;
+    font-size: 11px;
+    width: 60%;
+  }
+
+  /* Footer */
+
+  footer {
+    grid-template-columns: repeat(auto-fit, 110px);
+  }
+
+  .flogo {
+    width: 70px;
+    margin-bottom: 12px;
+  }
+
+  .content h4 {
+    margin-bottom: 15px;
+  }
+
+  .footer2 {
+    margin-bottom: 15px;
+  }
+
+  .social img {
+    width: 25px;
+  }
+
+  .content ul {
+    font-size: 12px;
+    margin-bottom: 8px;
+  }
+}
+
+/* 320px — 480px: Mobile devices */
+
+@media screen and (max-width: 480px) {
+  nav {
+    flex-direction: column;
+  }
+  nav img {
+    width: 40px;
+    margin-right: 5%;
+  }
+
+  .nav-button {
+    display: none;
+  }
+
+  li {
+    margin: 4px 2%;
+    margin-top: 10px;
+    font-size: 12px;
+  }
+
+  .main-content {
+    flex-direction: column;
+  }
+
+  header {
+    height: fit-content;
+  }
+
+  .left-header,
+  .right-header {
+    width: 100%;
+  }
+  .left-header {
+    height: 70%;
+  }
+
+  .left-header h1 {
+    font-size: 30px;
+    margin-bottom: 15px;
+  }
+  .left-header {
+    padding-right: 1%;
+  }
+  .left-header p {
+    font-size: 12px;
+    margin-bottom: 20px;
+  }
+  .right-header {
+    flex-direction: column-reverse;
+  }
+
+  .right-header-upper-container {
+    height: 50%;
+  }
+  .right-header-upper-container img {
+    width: 50px;
+  }
+
+  .dash {
+    margin-right: 0px;
+    display: flex;
+    align-items: center;
+  }
+  .dash img {
+    width: 40px;
+  }
+
+  .right-header-lower-container h3 {
+    width: fit-content;
+    font-size: 16px;
+    margin: 10px 8px;
+  }
+
+  .arrow {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .arrow img {
+    width: 50px;
+  }
+
+  button {
+    padding: 3px 12px;
+    margin: 0px 4px;
+  }
+
+  .popular-upper h2 {
+    font-size: 20px;
+    width: 80%;
+    margin-bottom: 40px;
+  }
+
+  .popular-game {
+    grid-template-columns: repeat(auto-fit, 250px);
+    grid-gap: 15px;
+  }
+
+  .popular-card {
+    height: 280px;
+    width: 240px;
+  }
+
+  .left-details h4 {
+    font-size: 14px;
+  }
+
+  .left-details p {
+    font-size: 11px;
+  }
+
+  .right-details button {
+    padding: 6px 10px;
+    margin-left: 10px;
+  }
+
+  .ratings img {
+    width: 12px;
+  }
+
+  .popular-lower {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5px;
+    justify-content: center;
+  }
+
+  .popular-lower img {
+    width: 280px;
+    height: 200px;
+    margin-right: 0px;
+    margin-bottom: 15px;
+    transition: all 0.2s ease-in-out;
+  }
+
+  .description-popular {
+    padding-right: 0px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .description-popular h1 {
+    font-size: 22px;
+    text-align: center;
+    margin-bottom: 8px;
+  }
+
+  .description-popular p {
+    font-size: 10px;
+    text-align: center;
+    width: 80%;
+  }
+
+  /* Recommended Page */
+
+  .heading h2 {
+    width: 500px;
+    font-size: 18px;
+  }
+
+  .next-button,
+  .previous-button {
+    width: 28px;
+    height: 28px;
+    margin: 0px 5px;
+  }
+  .next-button img,
+  .previous-button img {
+    width: 20px;
+  }
+
+  .recommend-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 300px);
+    grid-gap: 15px;
+  }
+
+  .recommend-card {
+    width: 300px;
+    height: 150px;
+  }
+
+  .recommend-card img {
+    width: 40%;
+    height: 100%;
+    margin-right: 10px;
+  }
+
+  .name {
+    margin-bottom: 8px;
+    font-size: 14px;
+  }
+
+  .type {
+    font-size: 12px;
+    margin-bottom: 8px;
+  }
+
+  .description {
+    color: #646464;
+    font-size: 12px;
+    margin-bottom: 10px;
+  }
+
+  /* Most played page */
+
+  .mostplayed-upper {
+    flex-direction: column;
+  }
+
+  .mostplayed-container h1 {
+    width: 60%;
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+
+  .mostplayed-left {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+  }
+  .mostplayed-left img {
+    width: 65%;
+    height: 250px;
+  }
+
+  .mostplayed-right {
+    padding-left: 0px;
+    width: 100%;
+    align-items: center;
+    padding-right: 0px;
+  }
+
+  .mostplayed-right span img {
+    display: none;
+  }
+
+  .mostplayed-right p {
+    font-size: 12px;
+    width: 90%;
+
+    text-align: center;
+    margin-bottom: 30px;
+    padding-right: 0%;
+  }
+
+  .lowerrightplayed img:first-of-type {
+    height: 230px;
+    width: 170px;
+  }
+
+  .lowerrightplayed img:last-of-type {
+    height: 140px;
+    width: 120px;
+    margin-left: 15px;
+  }
+
+  .mostplayed-lower {
+    width: 100%;
+    height: 200px;
+  }
+
+  .mostplayed-lower h2 {
+    width: 100%;
+    font-size: 18px;
+    margin-bottom: 8px;
+  }
+  .mostplayed-lower p {
+    margin-bottom: 8px;
+    font-size: 11px;
+    width: 60%;
+  }
+
+  /* Footer */
+
+  footer {
+    grid-template-columns: repeat(auto-fit, 110px);
+  }
+
+  .flogo {
+    width: 70px;
+    margin-bottom: 12px;
+  }
+
+  .content h4 {
+    margin-bottom: 15px;
+  }
+
+  .footer2 {
+    margin-bottom: 15px;
+  }
+
+  .social img {
+    width: 25px;
+  }
+
+  .content ul {
+    font-size: 12px;
+    margin-bottom: 8px;
+  }
+}
